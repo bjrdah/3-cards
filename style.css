@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans:wght@300;600&family=Red+Hat+Display&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans:wght@300;600&family=Red+Hat+Display&family=Roboto:ital,wght@1,300&display=swap');
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+.cards{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    
+}
+.card:hover{
+    opacity: 0.9;
+}
+.card{
+width: 33%;
+}
+.container{
+    padding: 55px 50px;
+    margin :0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+p{
+    padding-bottom: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 400;
+    line-height: 25px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 35px auto;
+}
+.left{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+}
+.mid{
+    background-color: hsl(184, 100%, 22%);
+}
+.right{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 20px 45px;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+
+}
+.bt-left{
+    color:hsl(31, 77%, 52%);
+}
+button:hover{
+    background-color: hsla(0, 0%, 100%, 0.75)
+}
+.bt-mid{
+    color: hsl(184, 100%, 22%);
+}
+.bt-right{
+    color:hsl(179, 100%, 13%);
+}
+@media screen and (max-width:600px) {
+    .cards{
+        flex-direction: column;
+        margin-top: 40px;
+        width: 85%;
+
+    }
+    .card{
+        width: 100%;
+    }
+    .left{
+        border-top-left-radius:10px ;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius:10px ;
+    }
+    .right{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+}
